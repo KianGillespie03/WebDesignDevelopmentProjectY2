@@ -1,0 +1,65 @@
+body
+{
+    background-color: green;
+}
+
+header
+{
+    background-image: url(../Images/Glen_Head.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav li a
+{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+h1
+{
+    text-align: center;
+}
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 100px;
+  }
+  
+  .product-card {
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h5,
+  .product-card p {
+    margin: 10px 0;
+  }
+  
+  .buy-button {
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .buy-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .product-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
