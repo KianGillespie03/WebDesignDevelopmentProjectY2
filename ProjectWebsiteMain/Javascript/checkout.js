@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem('userdetails') !== null) {
+        var userDetails = JSON.parse(localStorage.getItem('userdetails'));
+
+        document.getElementById("getFirstName").value = userDetails.firstName;
+        document.getElementById("getLastName").value = userDetails.lastName;
+        document.getElementById("getAddress1").value = userDetails.address1;
+        document.getElementById("getAddress2").value = userDetails.address2;
+        document.getElementById("getAddress3").value = userDetails.address3;
+    }
+});
+
 var checkout = document.getElementById('buy-now');
 
 checkout.addEventListener("click", () => {

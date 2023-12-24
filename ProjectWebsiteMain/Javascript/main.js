@@ -24,7 +24,11 @@ function checkLoginStatus() {
     var loggedin=localStorage.getItem('loggedIn');
     if (loggedin==1) {
         document.querySelector('#loginlogout').innerHTML="Logout";
+        element.classList.remove("d-none");        
+        element.classList.add("d-show");      
     } else{
+        element.classList.add("d-none");        
+        element.classList.remove("d-show");
         document.querySelector('#loginlogout').innerHTML="Login"; 
         element = document.getElementById("loginlogout");
         element.setAttribute("href", "login.html");
