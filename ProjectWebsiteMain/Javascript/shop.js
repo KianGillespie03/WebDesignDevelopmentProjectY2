@@ -15,13 +15,15 @@ var productCards = document.querySelectorAll(".product-card");
         });
     });
 
-var addtocart = document.getElementById('addtocart');
+var addtocart = document.querySelectorAll('.addtocart');
 
-addtocart.addEventListener("click", addToCart);
+addtocart.forEach(function (button) {
+    button.addEventListener('click', addToCart);
+});
 
 function addToCart() {
     var total=localStorage.getItem('checkout');
     total++;
     localStorage.setItem('checkout',total);
     document.querySelector('#checkout').innerHTML=total;
-}
+};

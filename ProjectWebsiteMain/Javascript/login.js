@@ -7,7 +7,7 @@
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
 
-        if (email === "NoamhColumba@gmail.com" && password === "password123") {
+        if (email === "NaomhColumba@gmail.com" && password === "password123") {
             localStorage.setItem('loggedIn', 1);
             window.location.href = "shop.html";
         } else {
